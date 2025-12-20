@@ -4,12 +4,13 @@ export default function HomePage() {
       
       {/* Hero */}
       <section style={{ marginBottom: 60 }}>
-        <h1>Healthcare runs on trust. Africa’s systems don’t.</h1>
-        <p style={{ fontSize: 18, marginTop: 10 }}>
-          HealthFuse is building the digital infrastructure that connects hospitals,
-          HMOs, laboratories, pharmacies, and regulators on one secure, unified layer.
-        </p>
-      </section>
+  <h1>Healthcare runs on trust. Infrastructure makes it scale.</h1>
+  <p style={{ fontSize: 18, marginTop: 10 }}>
+    HealthFuse is becoming the unifying digital infrastructure that connects
+    hospitals, HMOs, laboratories, pharmacies, and regulators across Africa —
+    enabling secure verification, interoperability, and system-wide efficiency.
+  </p>
+</section>
 
       {/* Problem */}
       <section style={{ marginBottom: 60 }}>
@@ -64,3 +65,31 @@ export default function HomePage() {
     </main>
   );
 }
+<section style={{ marginTop: 80 }}>
+  <h2>Work with HealthFuse</h2>
+  <p>
+    We collaborate with providers, payers, and partners to build
+    scalable healthcare infrastructure.
+  </p>
+  <p style={{ marginTop: 40 }}>
+  HealthFuse engages partners through carefully scoped pilots,
+  enabling validation, learning, and trust before scale.
+</p>
+<p style={{ marginTop: 40 }}>
+  As healthcare systems digitize and insurance penetration grows,
+  interoperable infrastructure becomes unavoidable. HealthFuse exists
+  to power that transition.
+</p>
+
+  <a
+    href="/contact"
+    style={{
+      display: "inline-block",
+      marginTop: 20,
+      padding: "10px 20px",
+      border: "1px solid #000",
+    }}
+  >
+    Request a pilot
+  </a>
+</section>

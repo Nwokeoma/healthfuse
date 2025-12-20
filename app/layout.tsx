@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "@/components/Header";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "HealthFuse — Digital Infrastructure for Healthcare",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );

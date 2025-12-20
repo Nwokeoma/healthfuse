@@ -61,6 +61,11 @@ export default function HomePage() {
           to a connected healthcare system.
         </p>
       </section>
+      <p style={{ marginTop: 40 }}>
+  While HealthFuse operates behind the scenes, patients benefit from faster
+  access to care, improved coordination, and stronger data protection across
+  the healthcare system.
+</p>
 
     </main>
   );

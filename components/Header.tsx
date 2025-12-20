@@ -14,6 +14,10 @@ export default function Header() {
         <a href="/pharmacies" style={{ marginRight: 15 }}>Pharmacies</a>
         <a href="/trust">Trust</a>
         <a href="/investors">Investors</a>
+        <a href="/regulators" style={{ marginRight: 15 }}>
+  Regulators
+</a>
+
       </nav><a
   href="/contact"
   style={{

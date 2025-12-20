@@ -103,6 +103,24 @@ export default function ContactPage() {
             correspondence@healthfuse.ng
           </a>
         </p>
+
+        <section style={{ marginTop: 60 }}>
+  <h2>How pilots work</h2>
+
+  <ol>
+    <li>Initial conversation to understand workflows and objectives</li>
+    <li>Definition of a limited-scope pilot</li>
+    <li>Technical and operational onboarding</li>
+    <li>Pilot execution and evaluation</li>
+    <li>Decision on expansion or next steps</li>
+  </ol>
+
+  <p style={{ marginTop: 20 }}>
+    Pilots are designed to be collaborative, low-risk, and focused on
+    real operational outcomes.
+  </p>
+</section>
+
       </main>
     );
   }

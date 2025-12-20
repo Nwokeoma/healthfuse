@@ -26,6 +26,45 @@ export default function TrustPage() {
           Every transaction and verification event is traceable, enabling
           transparency, dispute resolution, and system accountability.
         </p>
+
+        <section style={{ marginTop: 60 }}>
+  <h2>Built for regulated environments</h2>
+
+  <p>
+    HealthFuse is designed with the realities of regulated healthcare
+    environments in mind. System architecture prioritizes data integrity,
+    role-based access, traceability, and operational accountability.
+  </p>
+
+  <p style={{ marginTop: 20 }}>
+    As HealthFuse scales, the platform aligns with national healthcare policies,
+    insurance frameworks, and data protection regulations — ensuring compliance
+    is embedded into system design, not added as an afterthought.
+  </p>
+</section>
+
+<section style={{ marginTop: 60 }}>
+  <h2>Governance & regulatory alignment</h2>
+
+  <p>
+    HealthFuse operates with the understanding that healthcare systems
+    exist within strict regulatory, ethical, and governance frameworks.
+  </p>
+
+  <p style={{ marginTop: 20 }}>
+    Our platform is designed to support alignment with national health
+    authorities, insurance regulators, and data protection agencies.
+    This includes clear audit trails, defined data access roles, and
+    system-level accountability.
+  </p>
+
+  <p style={{ marginTop: 20 }}>
+    As deployments expand, HealthFuse works collaboratively with
+    ecosystem stakeholders to ensure compliance requirements are
+    addressed proactively and transparently.
+  </p>
+</section>
+
       </main>
     );
   }

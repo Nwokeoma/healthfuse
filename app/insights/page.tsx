@@ -17,6 +17,15 @@ export default function InsightsPage() {
               Why fragmentation, not innovation, is the real bottleneck.
             </p>
           </li>
+          <li>
+  <a href="/insights/pilots" className="underline">
+    Why Healthcare Pilots Fail — And How to Design Them Properly
+  </a>
+  <p className="mt-2 text-sm">
+    What pilots should actually test — and why most fail.
+  </p>
+</li>
+
         </ul>
       </>
     );

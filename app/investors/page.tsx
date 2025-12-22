@@ -9,6 +9,8 @@ export default function InvestorsPage() {
         This page is for long-term investors interested in healthcare infrastructure,
         system-level platforms, and durable network effects.
       </p>
+      <Button href="/contact">Request a pilot</Button>
+
 
       <p className="mt-4">
         Healthcare in Africa is expanding rapidly, yet its digital infrastructure

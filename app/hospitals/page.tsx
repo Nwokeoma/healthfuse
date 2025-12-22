@@ -10,6 +10,8 @@ export default function HospitalsPage() {
         managers responsible for patient verification, claims processing, and
         system coordination.
       </p>
+      <Button href="/contact">Request a pilot</Button>
+
 
       <p className="mt-4">
         Hospitals today operate across multiple verification portals, manual claim

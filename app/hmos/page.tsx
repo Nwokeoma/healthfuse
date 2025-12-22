@@ -9,6 +9,8 @@ export default function HMOsPage() {
         This page is for HMO executives, claims managers, and payer operations teams
         responsible for authorization, reimbursement, and cost control.
       </p>
+      <Button href="/contact">Request a pilot</Button>
+
 
       <p className="mt-4">
         Managing claims across disconnected providers increases fraud risk, slows

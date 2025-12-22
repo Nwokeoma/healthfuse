@@ -2,6 +2,11 @@ export default function ContactPage() {
     return (
       <main style={{ padding: 40, maxWidth: 800, margin: "0 auto" }}>
         <h1>Partner with HealthFuse</h1>
+        <p className="mt-4 text-sm">
+  This form is used to initiate pilot discussions and exploratory conversations.
+  There is no obligation or commitment.
+</p>
+
   
         <p style={{ marginTop: 20 }}>
           HealthFuse works with hospitals, HMOs, laboratories, pharmacies,

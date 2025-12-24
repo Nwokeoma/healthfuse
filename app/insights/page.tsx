@@ -25,6 +25,14 @@ export default function InsightsPage() {
     What pilots should actually test — and why most fail.
   </p>
 </li>
+<li>
+  <a href="/insights/verification" className="underline">
+    The Hidden Cost of Manual Verification in Healthcare Systems
+  </a>
+  <p className="mt-2 text-sm">
+    Why verification failures quietly drain healthcare systems.
+  </p>
+</li>
 
         </ul>
       </>

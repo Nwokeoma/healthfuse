@@ -1,74 +1,98 @@
-export default function InfrastructureEssay() {
-    return (
-      <>
-        <h1 className="mb-6">
-          Healthcare Doesn’t Need More Apps — It Needs Infrastructure
-        </h1>
-  
-        <p className="italic mt-4">
-          Building durable healthcare systems requires coordination, not novelty.
+"use client";
+
+import { useEffect } from "react";
+import { trackEvent } from "@/lib/analytics";
+
+export default function InfrastructureInsightPage() {
+  // Track insight view
+  useEffect(() => {
+    trackEvent("insight_opened", {
+      article: "healthcare_infrastructure",
+    });
+  }, []);
+
+  return (
+    <main style={{ padding: 40, maxWidth: 900, margin: "0 auto" }}>
+      <article>
+        <h1>Healthcare Needs Infrastructure, Not Just Software</h1>
+
+        <p style={{ marginTop: 20, fontStyle: "italic" }}>
+          Why verification, claims, and data exchange must be treated as shared
+          infrastructure — not isolated tools.
         </p>
-  
-        <p className="mt-6">
-          Over the past decade, healthcare innovation has largely focused on
-          applications — booking platforms, digital wallets, telemedicine tools,
-          and patient-facing solutions. While these products solve narrow problems,
-          they rarely address the deeper structural issues that slow healthcare
-          delivery.
+
+        <p style={{ marginTop: 30 }}>
+          Across many healthcare systems, especially in emerging markets,
+          digital transformation has focused heavily on applications: hospital
+          management systems, HMO portals, pharmacy tools, and lab software.
+          Each system solves a local problem — but collectively, they introduce
+          fragmentation.
         </p>
-  
-        <p className="mt-4">
-          The core challenge in healthcare is not a lack of innovation. It is a lack
-          of shared infrastructure.
+
+        <p style={{ marginTop: 20 }}>
+          Hospitals verify patients on one platform, submit claims on another,
+          exchange data manually, and reconcile payments weeks or months later.
+          The result is operational friction, delayed care, revenue leakage,
+          and distrust across the ecosystem.
         </p>
-  
-        <h2 className="mt-12 mb-4">Fragmentation is the real bottleneck</h2>
-  
-        <p className="mt-4">
-          Hospitals, laboratories, pharmacies, HMOs, and regulators often operate on
-          separate systems with limited interoperability. Verification processes are
-          repeated, claims are handled manually, and data moves slowly — if at all.
+
+        <h2 style={{ marginTop: 40 }}>The infrastructure gap</h2>
+
+        <p style={{ marginTop: 20 }}>
+          What’s missing is not more software — it’s shared infrastructure.
+          Infrastructure is what allows independent actors to interoperate
+          securely, consistently, and at scale.
         </p>
-  
-        <p className="mt-4">
-          This fragmentation creates delays, increases administrative cost, and
-          erodes trust between institutions. Patients experience these failures as
-          long wait times, repeated paperwork, and unclear payment processes.
+
+        <p style={{ marginTop: 20 }}>
+          In healthcare, this means common rails for identity verification,
+          eligibility checks, claims flow, and trusted data exchange — regardless
+          of which hospital, HMO, laboratory, or pharmacy is involved.
         </p>
-  
-        <h2 className="mt-12 mb-4">Infrastructure enables coordination</h2>
-  
-        <p className="mt-4">
-          Infrastructure is not visible to end users, but it determines how systems
-          behave at scale. In healthcare, infrastructure enables institutions to
-          verify information once, exchange data securely, and coordinate workflows
-          without unnecessary duplication.
+
+        <h2 style={{ marginTop: 40 }}>Why infrastructure thinking matters</h2>
+
+        <ul style={{ marginTop: 20 }}>
+          <li>It reduces duplicated integrations across institutions</li>
+          <li>It standardizes workflows without forcing uniform software</li>
+          <li>It lowers operational cost while improving trust</li>
+          <li>It enables regulation, oversight, and analytics by design</li>
+        </ul>
+
+        <p style={{ marginTop: 20 }}>
+          Most healthcare systems fail to scale digitally because they attempt
+          to connect institutions pair-by-pair. Infrastructure flips this
+          model — each participant integrates once, and interoperability
+          follows.
         </p>
-  
-        <p className="mt-4">
-          Importantly, infrastructure does not replace existing systems. It connects
-          them. It respects institutional boundaries while improving system-wide
-          efficiency.
+
+        <h2 style={{ marginTop: 40 }}>HealthFuse’s approach</h2>
+
+        <p style={{ marginTop: 20 }}>
+          HealthFuse is designed as infrastructure first. We focus on the
+          connective tissue: verification, claims coordination, and secure data
+          exchange — allowing hospitals and payers to keep their existing
+          systems while gaining interoperability.
         </p>
-  
-        <h2 className="mt-12 mb-4">Why this matters for emerging markets</h2>
-  
-        <p className="mt-4">
-          In emerging healthcare systems, the cost of fragmentation is even higher.
-          Limited resources, uneven digitization, and regulatory complexity make
-          coordination essential. Infrastructure-first approaches allow healthcare
-          systems to scale responsibly without sacrificing oversight or trust.
+
+        <p style={{ marginTop: 20 }}>
+          By starting with pilots, we validate workflows in real environments,
+          align incentives across stakeholders, and build trust before scale.
         </p>
-  
-        <p className="mt-4">
-          The future of healthcare will not be defined by the number of applications
-          deployed, but by the quality of the infrastructure that connects them.
+
+        <h2 style={{ marginTop: 40 }}>Looking ahead</h2>
+
+        <p style={{ marginTop: 20 }}>
+          Healthcare transformation will not be driven by the next standalone
+          application. It will be driven by infrastructure that quietly,
+          reliably, and securely enables collaboration across the ecosystem.
         </p>
-  
-        <p className="mt-12 text-sm italic">
-          HealthFuse is being built with this principle in mind.
+
+        <p style={{ marginTop: 20 }}>
+          The question is no longer whether infrastructure is needed — but who
+          will build it thoughtfully, inclusively, and sustainably.
         </p>
-      </>
-    );
-  }
-  
+      </article>
+    </main>
+  );
+}

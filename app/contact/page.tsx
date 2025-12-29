@@ -1,4 +1,14 @@
+"use client";
+
+import { useEffect } from "react";
+import { trackEvent } from "@/lib/analytics";
+
 export default function ContactPage() {
+  // Track page view
+  useEffect(() => {
+    trackEvent("contact_form_viewed");
+  }, []);
+
   return (
     <main style={{ padding: 40, maxWidth: 800, margin: "0 auto" }}>
       <h1>Partner with HealthFuse</h1>
@@ -15,11 +25,12 @@ export default function ContactPage() {
       </p>
 
       <form
-        action="https://formspree.io/f/abcdwxyz" /* 👈 replace with real Formspree ID */
+        action="https://formspree.io/f/abcdwxyz" // 🔁 replace with real Formspree ID
         method="POST"
         style={{ marginTop: 40 }}
+        onSubmit={() => trackEvent("contact_form_submitted")}
       >
-        {/* Hidden metadata for routing & analytics */}
+        {/* Hidden metadata */}
         <input type="hidden" name="source" value="healthfuse-website" />
         <input type="hidden" name="page" value="contact" />
 
@@ -74,6 +85,11 @@ export default function ContactPage() {
               name="stakeholder_type"
               required
               style={{ width: "100%", padding: 8 }}
+              onChange={(e) =>
+                trackEvent("stakeholder_selected", {
+                  stakeholder: e.target.value,
+                })
+              }
             >
               <option value="">Select one</option>
               <option value="hospital">Hospital / Clinic</option>
@@ -141,7 +157,7 @@ export default function ContactPage() {
         </a>
       </p>
 
-      {/* Pilot explanation */}
+      {/* Pilot flow explanation */}
       <section style={{ marginTop: 60 }}>
         <h2>How pilots work</h2>
 
